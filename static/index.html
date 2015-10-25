@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Upload Example</title>
+    <title>Look Upload</title>
     <style type="text/css" media="screen">
         #progress {
             width: 500px;
@@ -19,6 +19,10 @@
             background-color: green;
             width: 0%;
         }
+        .image-upload > input
+        {
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -26,7 +30,15 @@
       enctype="multipart/form-data"
       action="/api/upload"
       method="post">
-    <input type="file" id="userFileInput" name="userFile"/>
+
+<div class="image-upload">
+    <label for="userFileInput">
+        <img src="cloud.png"/>
+    </label>
+
+    <input id="userFileInput" name="userFile" type="file"/>
+</div>
+
 </form>
 <span id="status"></span>
 

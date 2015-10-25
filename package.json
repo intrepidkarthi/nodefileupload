@@ -1,14 +1,24 @@
 {
-    "name": "express-upload",
-    "description": "express-upload: node.js, express, multer, easyimage, html5 progress upload example",
-    "version": "0.0.1",
-    "engines": {
-        "node": ">= 0.10.x"
-    },
-    "private": true,
-    "dependencies": {
-        "express": "3.x",
-        "multer": "0.x",
-        "easyimage": "0.x"
-    }
+  "name": "lookupload",
+  "description": "Look File Upload module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">= 0.10.x"
+  },
+  "private": true,
+  "dependencies": {
+    "easyimage": "^0.1.7",
+    "express": "^3.21.2",
+    "multer": "^0.1.8"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "main": "server.js",
+  "keywords": [
+    "upload"
+  ],
+  "author": "Karthikeyan NG",
+  "license": "ISC",
+  "devDependencies": {}
 }

@@ -38,10 +38,10 @@ $(function () {
             var resJson = JSON.parse(xhr.responseText);
             status(resJson.file + ' done, choose a file');
             setTimer();
-            if (resJson.image)
-                window.open('./uploads/' + resJson.savedAs, 'upload', 'status=1, height = 300, width = 300, resizable = 0');
-            else
-                console.log('not an image');
+            // if (resJson.image)
+            //     window.open('./uploads/' + resJson.savedAs, 'upload', 'status=1, height = 300, width = 300, resizable = 0');
+            // else
+            //     console.log('not an image');
         };
         xhr.send(formData);
         return false; // no refresh
